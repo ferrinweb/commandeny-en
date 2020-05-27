@@ -1,0 +1,20 @@
+# Commandeny - Command Deny, Author: ferrinweb
+# Players with permission 'cd.bypass' can do commands which in command list below; 
+# Players with permission 'cd.reload' can do '/cmbreload' command to reload the config file;
+# Players who have the custom permission can perform the corresponding command in the command list below.
+
+# Message when a player without 'cd.bypass' or custom permission do a command in the command list.
+message: '&8[&cThis command is locked, you can not do this!&8]'
+
+# Message when a player without 'cd.reload' do '/cdreload' command.
+ondeny: '&8[&cYou do not have permission to do this!&8]'
+
+# Message config.yml file reloaded.
+onreload: '&8[&aconfig.yml reloaded!&8]'
+
+# Command list.
+# A command and its custom permission should be separated with '^' if you want define a custom permission for the command.
+# You can add command segment like 'pay *' then players can not do some lag command like '/pay * 0.00000001'. 
+commands:
+  - 'pl'
+  - 'pay *^cd.cdpay'
